@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>grade student</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body bgcolor="warning-sucess-blue"><br><br>
+	<center>
+<div class="row">
+<h1 style="color: green">GRADING SYSTEM</h1>
+<input  type="number" id="fl"  placeholder="  INPUT SCORE    " name="" class="form-control col-md-6"><br><br>
+<button onclick="result()" >GRADE STUDENT</button><br><br></div>	
+<div  id="see" style="color:rgba(20, 200, 150, 6000)" ></div></center> 
+
+ 
+
+
+	
+<script type="text/javascript">
+function  result() {
+	var a =fl.value;
+	if (a <0 ){
+	 see.innerHTML="invalid number"	
+	}
+	else if  (a<="") { 
+	    see.innerHTML="EMPTY INPUT,ENTER VALUE "
+	}
+	else if  (a<=39) { 
+	    see.innerHTML="fail"
+	}
+	
+	else if (a<=49) {
+		see.innerHTML="fair"
+	}
+
+	else if ( a<=59) {
+		see.innerHTML="good"
+	}
+	else if ( a<=69) {
+		 see.innerHTML="very good"
+		}
+
+	else if ( a<=100) {
+		see.innerHTML="excellent"
+	}
+	else if  (a>100) { 
+	    see.innerHTML="out of range"
+	}
+	
+}
+</script>
+</body>
+</html
